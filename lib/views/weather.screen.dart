@@ -22,7 +22,6 @@ class _WeatherScreenState extends State<WeatherScreen> {
     String cityName = await _weatherService.getCurrentCity();
 
     //get weather for the city
-
     try {
       final weather = await _weatherService.getWeather(cityName);
       setState(() {
